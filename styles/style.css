@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Gideon+Roman&family=Londrina+Shadow&family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://www.nerdfonts.com/assets/css/webfont.css');
+
+body,
+html {
+
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    margin: 0px;
+
+    box-sizing: border-box;
+
+
+}
+
+
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #d8dee9;
+    height: 100%;
+    /* Ensure full height of the viewport */
+    margin: 0;
+
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b4252;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-box-shadow: 0px 5px 3px 1px rgba(46, 52, 64, 1);
+    -moz-box-shadow: 0px 5px 3px 1px rgba(46, 52, 64, 1);
+    box-shadow: 0px 5px 3px 1px rgba(46, 52, 64, 1);
+    margin-bottom: auto;
+    height: 7em;
+}
+
+
+.header-icon {
+    padding: 10px;
+    padding-bottom: 15px;
+    margin: 0%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a3be8c;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    border-radius: 5px;
+    height: 70px;
+    margin: 25px;
+    -webkit-box-shadow: -4px 5px 3px 1px rgba(46, 52, 64, 1);
+    -moz-box-shadow: -4px 5px 3px 1px rgba(46, 52, 64, 1);
+    box-shadow: -4px 5px 3px 1px rgba(46, 52, 64, 1);
+
+}
+
+.logo:hover {
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform: translate(0%) scale(1.05)
+}
+
+#header-title {
+    text-shadow: 1px 1px 2px #3b4252;
+    font-family: "Londrina Shadow", sans-serif;
+    font-size: 2em;
+    padding: 20px;
+    padding-right: 0%;
+}
+
+
+
+
+
+.buttons {
+    margin: 20px;
+    margin-top: 2.5em;
+    margin-bottom: auto;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #282828;
+    background-color: #e5e9f0;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+}
+
+.buttons:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .buttons {
+        padding: 0.25em 0.75em;
+    }
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    grid-template-rows: 1fr;
+    /* One row */
+    gap: 10px;
+}
+
+
+.main-img {
+    max-height: 30rem;
+    margin-top: 8em;
+    margin-left: 8em;
+    margin-right: 8em;
+    border: solid 8px #4c566a;
+    -webkit-box-shadow: 11px 9px 0px 0px rgba(94, 129, 172, 1);
+    -moz-box-shadow: 11px 9px 0px 0px rgba(94, 129, 172, 1);
+    box-shadow: 11px 9px 0px 0px rgba(94, 129, 172, 1);
+}
+
+article {
+    display: flex;
+    min-width: 400px;
+    align-items: center;
+    margin: 20px;
+    font-family: "Londrina Shadow", sans-serif;
+    text-align: center;
+    color: #282828;
+}
+
+.main-txt {
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 1.4em;
+    max-width: 20em;
+    margin-left: 1em;
+    text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+
+h4 {
+    font-family: "JetBrains Mono", monospace;
+    text-shadow: 1px 1px 2px #3b4252;
+    font-size: 15px;
+    margin: 15px;
+}
+
+footer {
+    display: grid;
+    height: auto;
+
+    background-color: #3b4252;
+    color: #d8dee9;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-decoration: none;
+    border: #282828, solid, 10px;
+    -webkit-box-shadow: 0px -5px 1.5px 0.5px rgba(46, 52, 64, 1);
+    -moz-box-shadow: 0px -5px 1.5px 0.5px rgba(46, 52, 64, 1);
+    box-shadow: 0px -5px 1.5px 0.5px rgba(46, 52, 64, 1);
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+}
+
+a:link,
+a:visited {
+
+    text-decoration: none;
+    color: #d8dee9;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+}
+
+.footer-img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.main-header {
+    font-size: 1.8em;
+    margin: 3px;
+
+}
+
+/* ------ Shop Styling ---- */
+
+/* .shop-main{
+    display: grid;
+ 
+    grid-template-rows: auto auto;
+
+}
+
+.row-one{
+    display: grid;
+  
+    grid-template-columns: auto auto auto auto;
+} */
+.shop-main {
+
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal-width columns */
+    grid-template-rows: auto auto;
+    /* 2 rows of auto height */
+    grid-gap: 15px;
+    /* Gap between grid items */
+    width: 100%;
+    /* Ensure the grid takes up full width */
+    font-family: "JetBrains Mono", monospace;
+    margin: 0 auto;
+    /* Center the grid in the container */
+    padding: 10px;
+    /* Add some padding for better spacing */
+}
+
+.shop-main>div {
+    border: 2px solid #ffffff;
+    /* Add border around each item */
+    border-radius: 8px;
+    /* Rounded corners for the items */
+    padding: 10px;
+    /* Padding inside each item */
+    text-align: center;
+    /* Center text */
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #eceff4;
+    /* Light background for the items */
+    margin: 20px;
+}
+
+.shop-main img {
+    max-width: 100%;
+    /* Ensure images scale properly */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 4px;
+    /* Rounded corners for images */
+    margin-bottom: 10px;
+    /* Space between image and header */
+}
+
+
+
+.item {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #eceff4;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.second-main {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.image {
+    font-family: "Big Shoulders", sans-serif;
+    color: #d8dee9;
+    border: 5px solid #3b4252;
+    border-radius: 5px;
+    padding: 0%;
+    height: fit-content;
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    margin-top: 4em;
+    gap: 1em;
+    background-color: #3b4252;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.image:hover {
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform: translate(0%) scale(1.05)
+}
+
+.select-p {
+    background-color: #3b4252;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.choice {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
